@@ -4,7 +4,7 @@ game = True
 
 while game:
 
-    #Random number 1-1000
+    #Chooses a random number 1-100
     rnd = random.randint(1, 100)
 
     #Holds the random Number
@@ -15,7 +15,7 @@ while game:
     run = True
 
     #Attempt Counter
-    atmp = 0
+    atmp = 1
 
     while run:
 
@@ -51,14 +51,15 @@ while game:
         #print("\nThe Number was:")
         #print(intRnd)
 
-    print("Play Again? y/n")
+    print("Play Again?")
 
     check = True
 
     #Checks for a replay
     while check:
 
-        replay = input()
+        #.lower() makes it non caseSensitive 
+        replay = input("(y/n): ").lower()
 
         if replay == "y":
             check = False
@@ -70,7 +71,7 @@ while game:
             print("GG")
 
         else:
-            print("Enter valid command! y/n (Case Senstive)")
+            print("Enter valid command! please choose y/n")
 
 
 
